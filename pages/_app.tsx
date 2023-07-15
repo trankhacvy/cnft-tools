@@ -1,4 +1,5 @@
 import { WalletAdapterNetwork } from "@solana/wallet-adapter-base"
+import { Analytics } from "@vercel/analytics/react"
 import { ConnectionProvider, WalletProvider } from "@solana/wallet-adapter-react"
 import { WalletModalProvider } from "@solana/wallet-adapter-react-ui"
 import { PhantomWalletAdapter, SolflareWalletAdapter } from "@solana/wallet-adapter-wallets"
@@ -31,6 +32,11 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           description: siteConfig.description,
           site_name: siteConfig.name,
           title: siteConfig.name,
+          images: [
+            {
+              url: `https://cnft-tools.vercel.app/assets/og.png`,
+            },
+          ],
         }}
         description={siteConfig.description}
       />
@@ -45,6 +51,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           </WalletModalProvider>
         </WalletProvider>
       </ConnectionProvider>
+      <Analytics />
     </>
   )
 }

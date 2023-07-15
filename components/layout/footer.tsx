@@ -3,7 +3,7 @@ import { siteConfig } from "@/config/site"
 export default function Footer() {
   return (
     <footer>
-      <div className="container mx-auto w-full p-4 md:py-8">
+      <div className="container mx-auto w-full p-4 md:py-8 bg-red-200">
         <div className="sm:flex sm:items-center sm:justify-between">
           <a href="/" className="mb-4 flex items-center sm:mb-0">
             <img src="/assets/logo.png" className="mr-3 h-8" alt={siteConfig.name} />

@@ -42,9 +42,8 @@ export const Navigation = () => {
     <nav className="hidden w-[280px] shrink-0 lg:block">
       <div className="fixed flex flex-col left-0 top-0 z-0 h-full w-[280px] overflow-y-auto border-r border-dashed border-r-gray-500/24">
         <div className="mb-4 px-5 py-6">
-          <a href="/dashboard" className="flex font-bold gap-2 items-center">
+          <a href="/" className="font-bold">
             <img src="/assets/logo.png" className="h-10 w-10 rounded-md" />
-            cNFT Tools
           </a>
         </div>
         <div className="flex h-96 flex-col">
@@ -73,6 +72,9 @@ export const Navigation = () => {
               rel="noopener noreferrer"
             >
               <TwitterIcon />
+            </IconButton>
+            <IconButton color="primary" as="a" href="https://shyft.to/" target="_blank" rel="noopener noreferrer">
+              <img className="h-6 w-auto object-contain" src="/assets/shyft-logo.svg" />
             </IconButton>
           </div>
         </div>
