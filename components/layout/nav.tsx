@@ -7,7 +7,7 @@ import { siteConfig } from "@/config/site"
 import { cn } from "@/utils/cn"
 import { IconButton } from "../ui/icon-button"
 
-const NavItems = [
+export const NavItems = [
   {
     text: "Merkle Tree",
     href: Routes.TREE,
@@ -90,7 +90,7 @@ type NavItemProps = {
   icon?: React.ReactNode
 }
 
-const NavItem = ({ text, href, selected, icon }: NavItemProps) => {
+export const NavItem = ({ text, href, selected, icon }: NavItemProps) => {
   return (
     <Link href={href}>
       <div

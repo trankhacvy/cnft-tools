@@ -34,7 +34,7 @@ const App: FC<AppProps> = ({ Component, pageProps }) => {
           title: siteConfig.name,
           images: [
             {
-              url: `https://cnft-tools.vercel.app/assets/og.png`,
+              url: siteConfig.ogImage,
             },
           ],
         }}
